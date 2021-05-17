@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://localhost:3000/App -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <link href="./React App_files/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./React App_files/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="./React App_files/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="./React App_files/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="./React App_files/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link href="./React App_files/bootstrap.min(1).css" rel="stylesheet">
+      
+<!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvaW5kZXguY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsU0FBUztFQUNUOztjQUVZO0VBQ1osbUNBQW1DO0VBQ25DLGtDQUFrQztBQUNwQzs7QUFFQTtFQUNFO2FBQ1c7QUFDYiIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICBtYXJnaW46IDA7XG4gIGZvbnQtZmFtaWx5OiAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsICdSb2JvdG8nLCAnT3h5Z2VuJyxcbiAgICAnVWJ1bnR1JywgJ0NhbnRhcmVsbCcsICdGaXJhIFNhbnMnLCAnRHJvaWQgU2FucycsICdIZWx2ZXRpY2EgTmV1ZScsXG4gICAgc2Fucy1zZXJpZjtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG59XG5cbmNvZGUge1xuICBmb250LWZhbWlseTogc291cmNlLWNvZGUtcHJvLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0NvdXJpZXIgTmV3JyxcbiAgICBtb25vc3BhY2U7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>
+
+.App-logo {
+  height: 8vmin;
+  pointer-events: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: gray;
+  border:2px solid black; margin:2px; padding:5px;
+  height: 10vmin;
+  display: flex;
+  color:darkblue;
+  text-align: left;
+}
+.headerlogo{
+  width: 203vh;
+  align-items: center;
+}
+.facebooklogo,.instalogo,.twitterlogo{
+  height: 9vmin;
+  text-align: right;
+  
+}
+
+/* .Nav,.sec,.hed,.sec1,.foot1{
+  border:2px solid black; margin:2px; padding:4px;
+}
+#snav{
+  border:2px solid black; margin:2px; padding:1px;
+  background-color: cornflowerblue;
+}
+.Nav ul{
+  margin:0.5px; padding:1;
+}
+.Nav ul li{
+  display:inline; margin:30px;
+} */
+.foot1{
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+}
+#foot1{
+  color: white;
+}
+
+.hed{
+  background-color: rgb(135, 170, 235);
+  height: 30vh;
+}
+/* #navbar{
+  background-color: lightskyblue;
+
+} */
+#navbut{
+  background-color: darkblue;
+  color: white;
+}
+
+.sec{
+  color: black;
+  background-color: azure;
+  /* border:2px solid black; margin:2px; padding:4px; */
+}
+.Nav{
+  background-color: ghostwhite;
+}
+#but1{
+  background-color: limegreen;
+}
+
+.App-link {
+  color: #61dafb;
+}
+a{
+  color: black;
+}
+#card1{
+  width: 18rem;
+  background-color: lightblue;
+}
+#card2{
+  width: 18rem;
+  background-color: pink;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*navbar css*/
+/* .navbar {
+  margin-bottom: 0;
+  background-color: black;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color:black !important;
+  background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+} */
+
+/* .jumbotron {
+  
+  color: black;
+  background-color: lightgray;  
+} */
+.pret{
+  background-color: black;
+  color: white;
+  padding-left: 15px;
+  border: none;
+}
+/* #imag{
+  margin: 20px;
+  background-attachment: fixed;
+  background-position: center;
+} */
+/* .bg{
+  width: 280vw;
+  height: 200vh;
+} */
+.jumbotron {
+  background-image: url(/static/media/course.28b08c25.jpeg);
+  background-size: cover;
+  height: 500px;
+  text-align: left;
+}
+
+#txt{
+  text-align: center;
+  margin-top: 10rem;
+}
+#txt1{
+  text-align: center;
+  
+}
+.card
+{
+  margin: 20px;
+}
+.sec1{
+  border:2px solid black; margin:2px; padding:4px;
+  background-color: azure;
+}
+#sec2{
+  background-color: lightgray;
+  text-decoration-color: black;
+  height: 400px;
+}
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+  color: black;
+}
+
+.carousel-indicators li {
+  border-color: black;
+}
+
+.carousel-indicators li.active {
+  background-color: black;
+}
+
+.item h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  font-weight: 400;
+  font-style: italic;
+  margin: 70px 0;
+}
+
+.item span {
+  font-style: normal;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQXBwLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUVBO0VBQ0UsYUFBYTtFQUNiLG9CQUFvQjtBQUN0Qjs7O0FBR0E7RUFDRTtJQUNFLDRDQUE0QztFQUM5QztBQUNGOztBQUVBO0VBQ0Usc0JBQXNCO0VBQ3RCLHNCQUFzQixFQUFFLFVBQVUsRUFBRSxXQUFXO0VBQy9DLGNBQWM7RUFDZCxhQUFhO0VBQ2IsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UsWUFBWTtFQUNaLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0UsYUFBYTtFQUNiLGlCQUFpQjs7QUFFbkI7O0FBRUE7Ozs7Ozs7Ozs7OztHQVlHO0FBQ0g7RUFDRSx1QkFBdUI7RUFDdkIsWUFBWTtFQUNaLGlCQUFpQjtBQUNuQjtBQUNBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0Usb0NBQW9DO0VBQ3BDLFlBQVk7QUFDZDtBQUNBOzs7R0FHRztBQUNIO0VBQ0UsMEJBQTBCO0VBQzFCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLFlBQVk7RUFDWix1QkFBdUI7RUFDdkIscURBQXFEO0FBQ3ZEO0FBQ0E7RUFDRSw0QkFBNEI7QUFDOUI7QUFDQTtFQUNFLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7QUFDQTtFQUNFLFlBQVk7QUFDZDtBQUNBO0VBQ0UsWUFBWTtFQUNaLDJCQUEyQjtBQUM3QjtBQUNBO0VBQ0UsWUFBWTtFQUNaLHNCQUFzQjtBQUN4QjtBQUNBO0VBQ0U7SUFDRSx1QkFBdUI7RUFDekI7RUFDQTtJQUNFLHlCQUF5QjtFQUMzQjtBQUNGOztBQUVBLGFBQWE7QUFDYjs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7R0F1Qkc7O0FBRUg7Ozs7R0FJRztBQUNIO0VBQ0UsdUJBQXVCO0VBQ3ZCLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsWUFBWTtBQUNkO0FBQ0E7Ozs7R0FJRztBQUNIOzs7R0FHRztBQUNIO0VBQ0UseURBQW9DO0VBQ3BDLHNCQUFzQjtFQUN0QixhQUFhO0VBQ2IsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGlCQUFpQjtBQUNuQjtBQUNBO0VBQ0Usa0JBQWtCOztBQUVwQjtBQUNBOztFQUVFLFlBQVk7QUFDZDtBQUNBO0VBQ0Usc0JBQXNCLEVBQUUsVUFBVSxFQUFFLFdBQVc7RUFDL0MsdUJBQXVCO0FBQ3pCO0FBQ0E7RUFDRSwyQkFBMkI7RUFDM0IsNEJBQTRCO0VBQzVCLGFBQWE7QUFDZjtBQUNBO0VBQ0Usc0JBQXNCO0VBQ3RCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLHVCQUF1QjtBQUN6Qjs7QUFFQTtFQUNFLGVBQWU7RUFDZixvQkFBb0I7RUFDcEIsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixjQUFjO0FBQ2hCOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCIiwic291cmNlc0NvbnRlbnQiOlsiXG5cbi5BcHAtbG9nbyB7XG4gIGhlaWdodDogOHZtaW47XG4gIHBvaW50ZXItZXZlbnRzOiBub25lO1xufVxuXG5cbkBtZWRpYSAocHJlZmVycy1yZWR1Y2VkLW1vdGlvbjogbm8tcHJlZmVyZW5jZSkge1xuICAuQXBwLWxvZ28ge1xuICAgIGFuaW1hdGlvbjogQXBwLWxvZ28tc3BpbiBpbmZpbml0ZSAyMHMgbGluZWFyO1xuICB9XG59XG5cbi5BcHAtaGVhZGVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogZ3JheTtcbiAgYm9yZGVyOjJweCBzb2xpZCBibGFjazsgbWFyZ2luOjJweDsgcGFkZGluZzo1cHg7XG4gIGhlaWdodDogMTB2bWluO1xuICBkaXNwbGF5OiBmbGV4O1xuICBjb2xvcjpkYXJrYmx1ZTtcbiAgdGV4dC1hbGlnbjogbGVmdDtcbn1cbi5oZWFkZXJsb2dve1xuICB3aWR0aDogMjAzdmg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uZmFjZWJvb2tsb2dvLC5pbnN0YWxvZ28sLnR3aXR0ZXJsb2dve1xuICBoZWlnaHQ6IDl2bWluO1xuICB0ZXh0LWFsaWduOiByaWdodDtcbiAgXG59XG5cbi8qIC5OYXYsLnNlYywuaGVkLC5zZWMxLC5mb290MXtcbiAgYm9yZGVyOjJweCBzb2xpZCBibGFjazsgbWFyZ2luOjJweDsgcGFkZGluZzo0cHg7XG59XG4jc25hdntcbiAgYm9yZGVyOjJweCBzb2xpZCBibGFjazsgbWFyZ2luOjJweDsgcGFkZGluZzoxcHg7XG4gIGJhY2tncm91bmQtY29sb3I6IGNvcm5mbG93ZXJibHVlO1xufVxuLk5hdiB1bHtcbiAgbWFyZ2luOjAuNXB4OyBwYWRkaW5nOjE7XG59XG4uTmF2IHVsIGxpe1xuICBkaXNwbGF5OmlubGluZTsgbWFyZ2luOjMwcHg7XG59ICovXG4uZm9vdDF7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xuICBjb2xvcjogd2hpdGU7XG4gIHBhZGRpbmctdG9wOiAxMHB4O1xufVxuI2Zvb3Qxe1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5oZWR7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigxMzUsIDE3MCwgMjM1KTtcbiAgaGVpZ2h0OiAzMHZoO1xufVxuLyogI25hdmJhcntcbiAgYmFja2dyb3VuZC1jb2xvcjogbGlnaHRza3libHVlO1xuXG59ICovXG4jbmF2YnV0e1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBkYXJrYmx1ZTtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uc2Vje1xuICBjb2xvcjogYmxhY2s7XG4gIGJhY2tncm91bmQtY29sb3I6IGF6dXJlO1xuICAvKiBib3JkZXI6MnB4IHNvbGlkIGJsYWNrOyBtYXJnaW46MnB4OyBwYWRkaW5nOjRweDsgKi9cbn1cbi5OYXZ7XG4gIGJhY2tncm91bmQtY29sb3I6IGdob3N0d2hpdGU7XG59XG4jYnV0MXtcbiAgYmFja2dyb3VuZC1jb2xvcjogbGltZWdyZWVuO1xufVxuXG4uQXBwLWxpbmsge1xuICBjb2xvcjogIzYxZGFmYjtcbn1cbmF7XG4gIGNvbG9yOiBibGFjaztcbn1cbiNjYXJkMXtcbiAgd2lkdGg6IDE4cmVtO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBsaWdodGJsdWU7XG59XG4jY2FyZDJ7XG4gIHdpZHRoOiAxOHJlbTtcbiAgYmFja2dyb3VuZC1jb2xvcjogcGluaztcbn1cbkBrZXlmcmFtZXMgQXBwLWxvZ28tc3BpbiB7XG4gIGZyb20ge1xuICAgIHRyYW5zZm9ybTogcm90YXRlKDBkZWcpO1xuICB9XG4gIHRvIHtcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgzNjBkZWcpO1xuICB9XG59XG5cbi8qbmF2YmFyIGNzcyovXG4vKiAubmF2YmFyIHtcbiAgbWFyZ2luLWJvdHRvbTogMDtcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG4gIHotaW5kZXg6IDk5OTk7XG4gIGJvcmRlcjogMDtcbiAgZm9udC1zaXplOiAxMnB4ICFpbXBvcnRhbnQ7XG4gIGxpbmUtaGVpZ2h0OiAxLjQyODU3MTQzICFpbXBvcnRhbnQ7XG4gIGxldHRlci1zcGFjaW5nOiA0cHg7XG4gIGJvcmRlci1yYWRpdXM6IDA7XG59XG5cbi5uYXZiYXIgbGkgYSwgLm5hdmJhciAubmF2YmFyLWJyYW5kIHtcbiAgY29sb3I6ICNmZmYgIWltcG9ydGFudDtcbn1cblxuLm5hdmJhci1uYXYgbGkgYTpob3ZlciwgLm5hdmJhci1uYXYgbGkuYWN0aXZlIGEge1xuICBjb2xvcjpibGFjayAhaW1wb3J0YW50O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmICFpbXBvcnRhbnQ7XG59XG5cbi5uYXZiYXItZGVmYXVsdCAubmF2YmFyLXRvZ2dsZSB7XG4gIGJvcmRlci1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gIGNvbG9yOiAjZmZmICFpbXBvcnRhbnQ7XG59ICovXG5cbi8qIC5qdW1ib3Ryb24ge1xuICBcbiAgY29sb3I6IGJsYWNrO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBsaWdodGdyYXk7ICBcbn0gKi9cbi5wcmV0e1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbiAgY29sb3I6IHdoaXRlO1xuICBwYWRkaW5nLWxlZnQ6IDE1cHg7XG4gIGJvcmRlcjogbm9uZTtcbn1cbi8qICNpbWFne1xuICBtYXJnaW46IDIwcHg7XG4gIGJhY2tncm91bmQtYXR0YWNobWVudDogZml4ZWQ7XG4gIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbn0gKi9cbi8qIC5iZ3tcbiAgd2lkdGg6IDI4MHZ3O1xuICBoZWlnaHQ6IDIwMHZoO1xufSAqL1xuLmp1bWJvdHJvbiB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybChcImNvdXJzZS5qcGVnXCIpO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBoZWlnaHQ6IDUwMHB4O1xuICB0ZXh0LWFsaWduOiBsZWZ0O1xufVxuXG4jdHh0e1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbi10b3A6IDEwcmVtO1xufVxuI3R4dDF7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgXG59XG4uY2FyZFxue1xuICBtYXJnaW46IDIwcHg7XG59XG4uc2VjMXtcbiAgYm9yZGVyOjJweCBzb2xpZCBibGFjazsgbWFyZ2luOjJweDsgcGFkZGluZzo0cHg7XG4gIGJhY2tncm91bmQtY29sb3I6IGF6dXJlO1xufVxuI3NlYzJ7XG4gIGJhY2tncm91bmQtY29sb3I6IGxpZ2h0Z3JheTtcbiAgdGV4dC1kZWNvcmF0aW9uLWNvbG9yOiBibGFjaztcbiAgaGVpZ2h0OiA0MDBweDtcbn1cbi5jYXJvdXNlbC1jb250cm9sLnJpZ2h0LCAuY2Fyb3VzZWwtY29udHJvbC5sZWZ0IHtcbiAgYmFja2dyb3VuZC1pbWFnZTogbm9uZTtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG4uY2Fyb3VzZWwtaW5kaWNhdG9ycyBsaSB7XG4gIGJvcmRlci1jb2xvcjogYmxhY2s7XG59XG5cbi5jYXJvdXNlbC1pbmRpY2F0b3JzIGxpLmFjdGl2ZSB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xufVxuXG4uaXRlbSBoNCB7XG4gIGZvbnQtc2l6ZTogMTlweDtcbiAgbGluZS1oZWlnaHQ6IDEuMzc1ZW07XG4gIGZvbnQtd2VpZ2h0OiA0MDA7XG4gIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgbWFyZ2luOiA3MHB4IDA7XG59XG5cbi5pdGVtIHNwYW4ge1xuICBmb250LXN0eWxlOiBub3JtYWw7XG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: .75rem;
+  }
+  
+  body {
+    background: azure;
+  }
+
+  
+  .card-signin {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .sec{
+    color: black;
+    background-color: rgb(128, 226, 226);
+  }
+  .card-signin .card-title {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: lightcoral;
+  }
+  
+  .card-signin .card-body {
+    padding: 2rem;
+  }
+  
+  .form-signin {
+    width: 100%;
+  }
+  
+  .form-signin .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s;
+  }
+  
+  .form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .form-label-group input {
+    height: auto;
+    border-radius: 2rem;
+  }
+  
+  .form-label-group>input,
+  .form-label-group>label {
+    padding: var(--input-padding-y) var(--input-padding-x);
+  }
+  
+  .form-label-group>label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+  }
+  
+  .form-label-group input::placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input:not(:placeholder-shown) {
+    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+    padding-bottom: calc(var(--input-padding-y) / 3);
+  }
+  
+  .form-label-group input:not(:placeholder-shown)~label {
+    padding-top: calc(var(--input-padding-y) / 3);
+    padding-bottom: calc(var(--input-padding-y) / 3);
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .btn-google {
+    color: white;
+    background-color: #ea4335;
+  }
+  
+  .btn-facebook {
+    color: white;
+    background-color: #3b5998;
+  }
+  
+  /* Fallback for Edge
+  -------------------------------------------------- */
+  
+  @supports (-ms-ime-align: auto) {
+    .form-label-group>label {
+      display: none;
+    }
+    .form-label-group input::-ms-input-placeholder {
+      color: #777;
+    }
+  }
+  
+  /* Fallback for IE
+  -------------------------------------------------- */
+  
+  @media all and (-ms-high-contrast: none),
+  (-ms-high-contrast: active) {
+    .form-label-group>label {
+      display: none;
+    }
+    .form-label-group input:-ms-input-placeholder {
+      color: #777;
+    }
+  }
+  
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvTG9naW4uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0kseUJBQXlCO0lBQ3pCLHlCQUF5QjtFQUMzQjs7RUFFQTtJQUNFLGlCQUFpQjtFQUNuQjs7O0VBR0E7SUFDRSxTQUFTO0lBQ1QsbUJBQW1CO0lBQ25CLDhDQUE4QztFQUNoRDs7RUFFQTtJQUNFLFlBQVk7SUFDWixvQ0FBb0M7RUFDdEM7RUFDQTtJQUNFLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsaUJBQWlCO0lBQ2pCLGlCQUFpQjtFQUNuQjs7RUFFQTtJQUNFLGFBQWE7RUFDZjs7RUFFQTtJQUNFLFdBQVc7RUFDYjs7RUFFQTtJQUNFLGNBQWM7SUFDZCxtQkFBbUI7SUFDbkIscUJBQXFCO0lBQ3JCLGlCQUFpQjtJQUNqQixhQUFhO0lBQ2Isb0JBQW9CO0VBQ3RCOztFQUVBO0lBQ0Usa0JBQWtCO0lBQ2xCLG1CQUFtQjtFQUNyQjs7RUFFQTtJQUNFLFlBQVk7SUFDWixtQkFBbUI7RUFDckI7O0VBRUE7O0lBRUUsc0RBQXNEO0VBQ3hEOztFQUVBO0lBQ0Usa0JBQWtCO0lBQ2xCLE1BQU07SUFDTixPQUFPO0lBQ1AsY0FBYztJQUNkLFdBQVc7SUFDWCxnQkFBZ0I7SUFDaEIsc0NBQXNDO0lBQ3RDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsNkJBQTZCO0lBQzdCLHFCQUFxQjtJQUNyQiwrQkFBK0I7RUFDakM7O0VBa0JBO0lBQ0Usa0JBQWtCO0VBQ3BCOztFQUVBO0lBQ0UsNEVBQTRFO0lBQzVFLGdEQUFnRDtFQUNsRDs7RUFFQTtJQUNFLDZDQUE2QztJQUM3QyxnREFBZ0Q7SUFDaEQsZUFBZTtJQUNmLFdBQVc7RUFDYjs7RUFFQTtJQUNFLFlBQVk7SUFDWix5QkFBeUI7RUFDM0I7O0VBRUE7SUFDRSxZQUFZO0lBQ1oseUJBQXlCO0VBQzNCOztFQUVBO3NEQUNvRDs7RUFFcEQ7SUFDRTtNQUNFLGFBQWE7SUFDZjtJQUNBO01BQ0UsV0FBVztJQUNiO0VBQ0Y7O0VBRUE7c0RBQ29EOztFQUVwRDs7SUFFRTtNQUNFLGFBQWE7SUFDZjtJQUNBO01BQ0UsV0FBVztJQUNiO0VBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyI6cm9vdCB7XHJcbiAgICAtLWlucHV0LXBhZGRpbmcteDogMS41cmVtO1xyXG4gICAgLS1pbnB1dC1wYWRkaW5nLXk6IC43NXJlbTtcclxuICB9XHJcbiAgXHJcbiAgYm9keSB7XHJcbiAgICBiYWNrZ3JvdW5kOiBhenVyZTtcclxuICB9XHJcblxyXG4gIFxyXG4gIC5jYXJkLXNpZ25pbiB7XHJcbiAgICBib3JkZXI6IDA7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxcmVtO1xyXG4gICAgYm94LXNoYWRvdzogMCAwLjVyZW0gMXJlbSAwIHJnYmEoMCwgMCwgMCwgMC4xKTtcclxuICB9XHJcbiAgXHJcbiAgLnNlY3tcclxuICAgIGNvbG9yOiBibGFjaztcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigxMjgsIDIyNiwgMjI2KTtcclxuICB9XHJcbiAgLmNhcmQtc2lnbmluIC5jYXJkLXRpdGxlIHtcclxuICAgIG1hcmdpbi1ib3R0b206IDJyZW07XHJcbiAgICBmb250LXdlaWdodDogNTAwO1xyXG4gICAgZm9udC1zaXplOiAxLjVyZW07XHJcbiAgICBjb2xvcjogbGlnaHRjb3JhbDtcclxuICB9XHJcbiAgXHJcbiAgLmNhcmQtc2lnbmluIC5jYXJkLWJvZHkge1xyXG4gICAgcGFkZGluZzogMnJlbTtcclxuICB9XHJcbiAgXHJcbiAgLmZvcm0tc2lnbmluIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gIH1cclxuICBcclxuICAuZm9ybS1zaWduaW4gLmJ0biB7XHJcbiAgICBmb250LXNpemU6IDgwJTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDVyZW07XHJcbiAgICBsZXR0ZXItc3BhY2luZzogLjFyZW07XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIHBhZGRpbmc6IDFyZW07XHJcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycztcclxuICB9XHJcbiAgXHJcbiAgLmZvcm0tbGFiZWwtZ3JvdXAge1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMXJlbTtcclxuICB9XHJcbiAgXHJcbiAgLmZvcm0tbGFiZWwtZ3JvdXAgaW5wdXQge1xyXG4gICAgaGVpZ2h0OiBhdXRvO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMnJlbTtcclxuICB9XHJcbiAgXHJcbiAgLmZvcm0tbGFiZWwtZ3JvdXA+aW5wdXQsXHJcbiAgLmZvcm0tbGFiZWwtZ3JvdXA+bGFiZWwge1xyXG4gICAgcGFkZGluZzogdmFyKC0taW5wdXQtcGFkZGluZy15KSB2YXIoLS1pbnB1dC1wYWRkaW5nLXgpO1xyXG4gIH1cclxuICBcclxuICAuZm9ybS1sYWJlbC1ncm91cD5sYWJlbCB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDA7XHJcbiAgICBsZWZ0OiAwO1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIG1hcmdpbi1ib3R0b206IDA7XHJcbiAgICAvKiBPdmVycmlkZSBkZWZhdWx0IGA8bGFiZWw+YCBtYXJnaW4gKi9cclxuICAgIGxpbmUtaGVpZ2h0OiAxLjU7XHJcbiAgICBjb2xvcjogIzQ5NTA1NztcclxuICAgIGJvcmRlcjogMXB4IHNvbGlkIHRyYW5zcGFyZW50O1xyXG4gICAgYm9yZGVyLXJhZGl1czogLjI1cmVtO1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIC4xcyBlYXNlLWluLW91dDtcclxuICB9XHJcbiAgXHJcbiAgLmZvcm0tbGFiZWwtZ3JvdXAgaW5wdXQ6Oi13ZWJraXQtaW5wdXQtcGxhY2Vob2xkZXIge1xyXG4gICAgY29sb3I6IHRyYW5zcGFyZW50O1xyXG4gIH1cclxuICBcclxuICAuZm9ybS1sYWJlbC1ncm91cCBpbnB1dDotbXMtaW5wdXQtcGxhY2Vob2xkZXIge1xyXG4gICAgY29sb3I6IHRyYW5zcGFyZW50O1xyXG4gIH1cclxuICBcclxuICAuZm9ybS1sYWJlbC1ncm91cCBpbnB1dDo6LW1zLWlucHV0LXBsYWNlaG9sZGVyIHtcclxuICAgIGNvbG9yOiB0cmFuc3BhcmVudDtcclxuICB9XHJcbiAgXHJcbiAgLmZvcm0tbGFiZWwtZ3JvdXAgaW5wdXQ6Oi1tb3otcGxhY2Vob2xkZXIge1xyXG4gICAgY29sb3I6IHRyYW5zcGFyZW50O1xyXG4gIH1cclxuICBcclxuICAuZm9ybS1sYWJlbC1ncm91cCBpbnB1dDo6cGxhY2Vob2xkZXIge1xyXG4gICAgY29sb3I6IHRyYW5zcGFyZW50O1xyXG4gIH1cclxuICBcclxuICAuZm9ybS1sYWJlbC1ncm91cCBpbnB1dDpub3QoOnBsYWNlaG9sZGVyLXNob3duKSB7XHJcbiAgICBwYWRkaW5nLXRvcDogY2FsYyh2YXIoLS1pbnB1dC1wYWRkaW5nLXkpICsgdmFyKC0taW5wdXQtcGFkZGluZy15KSAqICgyIC8gMykpO1xyXG4gICAgcGFkZGluZy1ib3R0b206IGNhbGModmFyKC0taW5wdXQtcGFkZGluZy15KSAvIDMpO1xyXG4gIH1cclxuICBcclxuICAuZm9ybS1sYWJlbC1ncm91cCBpbnB1dDpub3QoOnBsYWNlaG9sZGVyLXNob3duKX5sYWJlbCB7XHJcbiAgICBwYWRkaW5nLXRvcDogY2FsYyh2YXIoLS1pbnB1dC1wYWRkaW5nLXkpIC8gMyk7XHJcbiAgICBwYWRkaW5nLWJvdHRvbTogY2FsYyh2YXIoLS1pbnB1dC1wYWRkaW5nLXkpIC8gMyk7XHJcbiAgICBmb250LXNpemU6IDEycHg7XHJcbiAgICBjb2xvcjogIzc3NztcclxuICB9XHJcbiAgXHJcbiAgLmJ0bi1nb29nbGUge1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2VhNDMzNTtcclxuICB9XHJcbiAgXHJcbiAgLmJ0bi1mYWNlYm9vayB7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjM2I1OTk4O1xyXG4gIH1cclxuICBcclxuICAvKiBGYWxsYmFjayBmb3IgRWRnZVxyXG4gIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovXHJcbiAgXHJcbiAgQHN1cHBvcnRzICgtbXMtaW1lLWFsaWduOiBhdXRvKSB7XHJcbiAgICAuZm9ybS1sYWJlbC1ncm91cD5sYWJlbCB7XHJcbiAgICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgICB9XHJcbiAgICAuZm9ybS1sYWJlbC1ncm91cCBpbnB1dDo6LW1zLWlucHV0LXBsYWNlaG9sZGVyIHtcclxuICAgICAgY29sb3I6ICM3Nzc7XHJcbiAgICB9XHJcbiAgfVxyXG4gIFxyXG4gIC8qIEZhbGxiYWNrIGZvciBJRVxyXG4gIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovXHJcbiAgXHJcbiAgQG1lZGlhIGFsbCBhbmQgKC1tcy1oaWdoLWNvbnRyYXN0OiBub25lKSxcclxuICAoLW1zLWhpZ2gtY29udHJhc3Q6IGFjdGl2ZSkge1xyXG4gICAgLmZvcm0tbGFiZWwtZ3JvdXA+bGFiZWwge1xyXG4gICAgICBkaXNwbGF5OiBub25lO1xyXG4gICAgfVxyXG4gICAgLmZvcm0tbGFiZWwtZ3JvdXAgaW5wdXQ6LW1zLWlucHV0LXBsYWNlaG9sZGVyIHtcclxuICAgICAgY29sb3I6ICM3Nzc7XHJcbiAgICB9XHJcbiAgfVxyXG4gICJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div><div class="App"><header><nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark"><div class="container-fluid"><a class="navbar-brand" href="http://localhost:3000/App#">Full Stack Dev Courses</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNavDropdown"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link active" aria-current="page" href="http://localhost:3000/App#">Home</a></li><li class="nav-item"><a class="nav-link" href="http://localhost:3000/App#course">Popular Courses</a></li><li class="nav-item"><a class="nav-link" href="http://localhost:3000/App#contactus">Contact Us</a></li><li class="nav-item dropdown nav-item"><a class="nav-link dropdown-toggle" href="http://localhost:3000/App#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registration</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="http://localhost:3000/Registration">Sign Up</a><a class="dropdown-item" href="http://localhost:3000/Login">Login</a></div></li></ul></div></div></nav></header><section class="sec"><div class="jumbotron text-center"><h1 id="txt" style="font-family: fantasy; font-weight: bolder;">Full Stack Dev Courses</h1><p id="txt1"> Carve Your Own Future In The Technology World</p></div></section><section id="sec2"><h1 style="text-align: center; padding-top: 25px; font-family: cursive; font-weight: bolder;">About</h1><div id="myCarousel" class="carousel slide text-center" data-ride="carousel"><ol class="carousel-indicators"><li data-target="#myCarousel" data-slide-to="0" class="active"></li><li data-target="#myCarousel" data-slide-to="1"></li><li data-target="#myCarousel" data-slide-to="2"></li></ol><div class="carousel-inner" role="listbox"><div class="item active"><h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4></div><div class="item"><h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4></div><div class="item"><h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4></div></div><a class="left carousel-control" href="http://localhost:3000/App#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="http://localhost:3000/App#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a></div></section><section class="sec1"><div id="course"><h1 class="text-center">Popular Courses</h1><div class="card-group"><div class="card" style="width: 18rem;"><img src="./React App_files/mean.jpeg" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">Card title</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href="http://localhost:3000/App#" class="btn btn-primary">Register</a></div></div><div class="card" style="width: 18rem;"><img src="./React App_files/mern.jpeg" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">Card title</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href="http://localhost:3000/App#" class="btn btn-primary">Register</a></div></div><div class="card" style="width: 18rem;"><img src="./React App_files/lamp.jpeg" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">Card title</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href="http://localhost:3000/App#" class="btn btn-primary">Register</a></div></div><div class="card" style="width: 18rem;"><img src="./React App_files/lemp.jpeg" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">Card title</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href="http://localhost:3000/App#" class="btn btn-primary">Register</a></div></div></div></div></section><footer class="foot1"><div id="contactus"><div class="container-fluid bg-grey"><h2 class="text-center">CONTACT US</h2><br><div class="row"><div class="col-sm-5"><p>Contact us and we'll get back to you within 24 hours.</p><p><i class="fa fa-map-marker" aria-hidden="true"></i> New Delhi, India</p><p><i class="fa fa-phone-square" aria-hidden="true"></i> +22 204154688</p><p><i class="fa fa-envelope" aria-hidden="true"></i> support@something.com</p></div><div class="col-sm-7"><div class="row"><div class="col-sm-6 form-group"><input class="form-control" id="name" name="name" placeholder="Name" type="text" required=""></div><div class="col-sm-6 form-group"><input class="form-control" id="email" name="email" placeholder="Email" type="email" required=""></div></div><textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br><div class="row"><div class="col-sm-12 form-group"><button class="btn btn-info pull-right" type="submit">Send</button></div></div></div><pre class="pret"><p>© 2021  All rights reserved.</p><br><p>Designed and Developed by  </p></pre></div></div></div></footer></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./React App_files/bundle.js"></script><script src="./React App_files/vendors_main.chunk.js"></script><script src="./React App_files/main.chunk.js"></script>
+</body></html>
